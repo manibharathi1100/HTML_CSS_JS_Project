@@ -16,7 +16,7 @@
   
 <h3>Frameworks Known <h3>
  
-  <img src=""> 
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green"> 
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
    
 <h3>Social<h3>
