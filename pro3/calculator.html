@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculatorx</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rampart+One&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+	     *{
+	     	font-family: 'Open Sans', sans-serif;
+			
+		}
+		h1{
+			margin-top: 10px;
+			margin-bottom: 40px;
+			padding-bottom: 6px;
+			padding-top: 10px;
+            font-size: 6ex;
+			background: linear-gradient(#06F9A7,#00D0E4);
+			text-align: center;
+
+		}
+		.formstyle{
+		   
+           box-shadow: 20px 20px 50px rgba(0,0,0,0.8);
+           border-radius: 20px;
+           border: 5px solid grey;
+           width: 345px;
+		   height: 600px;
+		   background-color: #211F1F;	
+
+			
+			
+		}
+    
+		input{
+			margin-top: 10px;
+			border: 2px solid grey;
+			border-radius: 5px;
+			width: 300px;
+			text-align: right;
+			font-size: 4ex;
+		}
+		
+
+		.btn-group button{
+			margin: 4px;
+			padding-left: 13px;
+			padding-right: 13px;
+			background-color: white;
+			font-size: 4ex;
+			border: 2px solid grey;
+			box-shadow: 2px 2px 5px rgba(1,1,1,0.8);
+
+		}
+
+
+		span #equal{
+			padding: 0px;
+			margin: 0px;
+			background-color: orange;
+			font-size: 7ex;
+			border: 2px solid grey;
+			border-radius: 10px;
+			border-color: red;
+			box-shadow: 2px 2px 5px rgba(1,1,1,0.8);
+			color: white;
+
+			
+			
+			box-shadow: 2px 2px 5px rgba(1,1,1,0.8);
+
+
+		}
+		#clear{
+			background: red;
+			padding-left: 50px;
+			padding-right: 50px;
+			border-radius: 20px
+		}
+
+
+	</style>
+
+</head>
+<body style="background-color: #066E11">
+	<h1><marquee scrollamount="10" direction = "down" behavior = "slide" style="text-align: center;">Calculator</marquee></h1>
+		<center>	
+			<div class="formstyle">
+				<form name="form1">
+
+					<input id="calc"  value="" type="text" name="answer" ><br><br>
+
+					<div class="btn-group" role="group" aria-label="Third group">
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='1'">1</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='2'">2</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='3'">3</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='+'">+</button>&nbsp;
+    				</div>
+    				<br><br>
+    				<div class="btn-group" role="group" aria-label="Third group">
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='4'">4</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='5'">5</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='6'">6</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='-'">&nbsp;-</button>&nbsp;
+
+  					</div>
+  					<br><br>
+    				<div class="btn-group" role="group" aria-label="Third group">
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='7'">7</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='8'">8</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='9'">9</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='*'">&nbsp;*</button>&nbsp;
+
+  					</div>
+  					<br><br>
+    				<div class="btn-group" role="group" aria-label="Third group">
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='/'">/&nbsp;</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='0'">0</button>&nbsp;&nbsp;
+    					<button type="button" class="btn btn-info" onclick="form1.answer.value +='.'">.&nbsp;</button>&nbsp;&nbsp;
+    					
+  					</div>
+  					<span>
+    						<button type="button" class="btn btn-info" id="equal" onclick="form1.answer.value = eval(form1.answer.value)">&nbsp;=&nbsp;</button>&nbsp;
+    					</span>
+  					<br><br>
+    				<div class="btn-group"  role="group" aria-label="Third group">
+    					<button type="button" id = "clear" class="btn btn-info" onclick="form1.answer.value =' '">CLEAR ALL</button>
+
+  					</div>
+  					
+
+
+
+
+
+
+
+
+				</form>
+			</div>
+		<center>
+
+</body>
+</html>
